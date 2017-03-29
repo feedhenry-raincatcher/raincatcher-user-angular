@@ -1,0 +1,11 @@
+require('./empty.tpl.html.js');
+require('./group-detail.tpl.html.js');
+require('./group-empty.tpl.html.js');
+require('./group-form.tpl.html.js');
+require('./group-list.tpl.html.js');
+require('./group.tpl.html.js');
+require('./login.tpl.html.js');
+require('./worker-detail.tpl.html.js');
+require('./worker-form.tpl.html.js');
+require('./worker-list.tpl.html.js');
+require('./worker.tpl.html.js');
