@@ -85,7 +85,6 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '                <p>{{ctrl.workerMap[file.owner].name}}</p>\n' +
     '              </div>\n' +
     '            </div>\n' +
-    '            <md-icon class="md-secondary" md-font-set="material-icons">delete</md-icon>\n' +
     '            <md-divider></md-divider>\n' +
     '          </md-list-item>\n' +
     '        </md-list>\n' +
