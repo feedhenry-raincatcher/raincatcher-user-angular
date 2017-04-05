@@ -2,6 +2,7 @@
 
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
+  var appConfig = require('./lib/constants')
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -19,10 +20,15 @@ module.exports = function(grunt) {
           run: true
         }
       }
+    },
+    wfmTemplate: {
+      module: appConfig.USER_DIRECTIVE_MODULE,
+      templateDir: "lib/template",
+      outputDir: "./dist"
     }
   });
 
-
+  grunt.loadNpmTasks('fh-wfm-template-build');
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks("grunt-eslint");
   grunt.registerTask('mocha', ['mochaTest']);
