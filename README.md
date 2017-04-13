@@ -7,10 +7,34 @@ This module is an AngularJS implementation of User functionality for the Raincat
 ```javascript
 angular.module('app', [
 ...
-, require('fh-wfm-user-angular')()
+, require('fh-wfm-user-angular')({
+  templates: {
+    //Optional template for the login screen
+    login: 'mycustomlogintempalateid'
+  }
+})
 ...
 ])
 ```
+
+## Templates
+
+### Login
+
+A custom html template can be passed in when rendering the `login` directive.
+
+This template has access to the Controller as `ctrl`.
+
+#### Login Controller Properties
+
+The Login Controller is assigned the following properties that are accessible to the custom template if required.
+
+| Property | Type | Description | Example |
+| ---- | ----------- | -------- | ------- |
+| login | function | Authenticates the user with a `username` and `password` parameters | `ctrl.login("someusername", "somepassowrd")` |
+| logout | function | Logs out the currently logged out user | `ctrl.logout()` |
+| hasSession | boolean | Identifies if the currently logged in user has a valid session | `ctrl.hasSession` |
+| loginErrorMessage | string | A message to display to the user if there is an error message | `ctrl.loginErrorMessage = "Invalid Credentials"` |
 
 ## Topics
 
