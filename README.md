@@ -10,6 +10,7 @@ angular.module('app', [
 , require('fh-wfm-user-angular')({
   templates: {
     //Optional template for the login screen
+    //Note: This will be loaded from the angular template cache.
     login: 'mycustomlogintempalateid'
   }
 })
