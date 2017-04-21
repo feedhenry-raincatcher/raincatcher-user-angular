@@ -14,7 +14,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '    </h3>\n' +
     '\n' +
     '    <span flex></span>\n' +
-    '    <md-button class="md-icon-button" aria-label="Close" ng-click="ctrl.selectGroup($event, ctrl.model)">\n' +
+    '    <md-button class="md-icon-button" aria-label="Close" ng-click="ctrl.cancel($event, ctrl.model)">\n' +
     '      <md-icon md-font-set="material-icons">close</md-icon>\n' +
     '    </md-button>\n' +
     '  </div>\n' +
