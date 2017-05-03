@@ -1,6 +1,6 @@
 {
   "name": "fh-wfm-user-angular",
-  "version": "0.2.3-alpha.778.1",
+  "version": "0.2.3",
   "description": "An AngularJS module for viewing User details.",
   "main": "lib/user-ng.js",
   "repository": {
