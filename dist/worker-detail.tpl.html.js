@@ -41,7 +41,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '            ng-class="{active: ctrl.selected.id === workorder.id}"\n' +
     '            class="md-3-line workorder-item"\n' +
     '          >\n' +
-    '          <workorder-status class="" status="ctrl.resultMap[workorder.id].status"></workorder-status>\n' +
+    '          <workorder-status class="" status="workorder.status"></workorder-status>\n' +
     '\n' +
     '            <div class="md-list-item-text">\n' +
     '              <h3>\n' +
