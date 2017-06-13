@@ -32,7 +32,7 @@
             ng-class="{active: ctrl.selected.id === workorder.id}"
             class="md-3-line workorder-item"
           >
-          <workorder-status class="" status="ctrl.resultMap[workorder.id].status"></workorder-status>
+          <workorder-status class="" status="workorder.status"></workorder-status>
 
             <div class="md-list-item-text">
               <h3>

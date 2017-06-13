@@ -1,6 +1,6 @@
 {
   "name": "fh-wfm-user-angular",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "An AngularJS module for viewing User details.",
   "main": "lib/user-ng.js",
   "repository": {
@@ -19,7 +19,7 @@
   "author": "feedhenry-raincatcher@redhat.com",
   "license": "MIT",
   "dependencies": {
-    "fh-wfm-mediator": "0.3.4",
+    "fh-wfm-mediator": "1.0.0-pre.1",
     "q": "1.4.1",
     "shortid": "^2.2.6"
   },
